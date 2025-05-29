@@ -1,0 +1,131 @@
+/* Reset & Base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar {
+  background-color: #003366;
+  color: white;
+  padding: 1rem 0;
+  transition: background-color 0.3s ease;
+}
+
+header.navbar a.navbar-brand {
+  color: white;
+  text-decoration: none;
+}
+
+header.navbar button#modeToggle {
+  font-size: 1.25rem;
+}
+
+/* Room Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgb(0 0 0 / 0.2);
+}
+
+.card-img-top {
+  border-radius: 12px 12px 0 0;
+  height: 180px;
+  object-fit: cover;
+}
+
+.badge {
+  font-size: 0.85rem;
+  padding: 0.4em 0.7em;
+  border-radius: 20px;
+}
+
+.vip-badge {
+  background: linear-gradient(45deg, #f39c12, #d35400);
+  color: white;
+  font-weight: 600;
+}
+
+.normal-badge {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.availability {
+  font-size: 0.85rem;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.btn-book {
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Booking Section */
+#bookingList .list-group-item {
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  background: #e9ecef;
+  transition: background-color 0.3s ease;
+}
+
+#bookingList .list-group-item strong {
+  color: #003366;
+}
+
+#noBookings {
+  font-style: italic;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ddd;
+}
+
+body.dark-mode header.navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .card {
+  box-shadow: 0 4px 15px rgb(255 255 255 / 0.1);
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+body.dark-mode .badge.vip-badge {
+  background: linear-gradient(45deg, #e67e22, #d35400);
+}
+
+body.dark-mode .badge.normal-badge {
+  background-color: #2980b9;
+}
+
+body.dark-mode #bookingList .list-group-item {
+  background: #2c2c2c;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 140px;
+  }
+}
